@@ -55,7 +55,7 @@ const sidebarBottomLinks = [
   <aside class="dashboard-sidebar">
     <div class="dashboard-sidebar-inner">
       <div class="dashboard-sidebar-upper">
-        <div class="relative border border-gray-200">
+        <div class="relative">
           <img src="/logos/logo.svg" alt="ServeHub Logo">
           <div class="absolute -right-9 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 transition rounded-full size-6 border border-gray-200 flex justify-center items-center cursor-pointer">
             <SvgoChevronLeftDouble class="text-gray-500 size-2" />
@@ -87,7 +87,7 @@ const sidebarBottomLinks = [
 
 <style>
 .dashboard-sidebar{
-  @apply fixed left-0 w-[312px] h-screen py-8 px-6 border border-red-500;
+  @apply fixed left-0 w-[312px] h-screen py-8 px-6 border-r border-gray-200;
 }
 .dashboard-sidebar .dashboard-sidebar-inner{
   @apply flex flex-col justify-between h-full text-base font-semibold;
@@ -107,6 +107,9 @@ const sidebarBottomLinks = [
 .dashboard-sidebar .sidebar-links .sidebar-link-item:hover,
 .dashboard-sidebar .sidebar-links .sidebar-link-item:hover .sidebar-icon{
   @apply text-brand-700;
+}
+.dashboard-sidebar-lower{
+  @apply pt-6 border-t border-gray-200;
 }
 /*.dashboard-sidebar .sidebar-links .sidebar-link-item.router-link-active,*/
 /*.dashboard-sidebar .sidebar-links .sidebar-link-item.router-link-active .sidebar-icon{*/
