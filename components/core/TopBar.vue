@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="pb-6">
     <div class="flex justify-between items-center">
       <div>
         <h1 class="text-2xl text-gray-700">Dashboard</h1>

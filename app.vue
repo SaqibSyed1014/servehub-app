@@ -12,7 +12,7 @@ nuxtApp.hook("page:finish", () => {
 <template>
   <Html lang="en-US">
   <VitePwaManifest />
-    <Body class="bg-white text-gray-900 antialiased transition-colors duration-300">
+    <Body class="bg-white text-gray-700 antialiased transition-colors duration-300">
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>

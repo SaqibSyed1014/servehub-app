@@ -15,13 +15,19 @@ body{
 
 
 input[type=checkbox]{
-    @apply appearance-none w-5 h-5 text-brand-600 border border-gray-300 rounded-md focus:ring-0 cursor-pointer
+    @apply appearance-none w-5 h-5 text-brand-600 bg-gray-200 border border-gray-300 rounded-md focus:ring-0 cursor-pointer
+}
+input[type=checkbox].rounded-cb{
+    @apply w-4 h-4 rounded-full
 }
 input[type=radio]{
     @apply appearance-none w-5 h-5  border border-gray-300 rounded-full focus:ring-0 cursor-pointer
 }
 input[type='radio']:checked{
     @apply bg-brand-600
+}
+.checkbox-group{
+    @apply flex items-center gap-2 text-gray-500
 }
 input[type="search"]::-webkit-search-cancel-button {
     /* Remove default */
@@ -33,9 +39,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .form-control input{
     @apply w-full
-}
-section{
-    @apply pb-24
 }
 h1, h2, h3, h4, h5, h6{
     @apply font-semibold

@@ -1,9 +1,11 @@
 <template>
-  <div>
+  <div class="overflow-x-hidden">
     <BaseSideBar />
     <div class="overflow-y-auto ml-[312px] p-8">
       <TopBar />
-      <slot />
+      <main>
+        <slot/>
+      </main>
     </div>
   </div>
 </template>

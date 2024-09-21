@@ -1,27 +1,30 @@
-.hero-section .dashed-ring{
-    @apply absolute left-1/2 transform -translate-x-1/2 rounded-full z-10 border border-gray-200 border-dashed
+.outlined-card{
+    @apply relative border border-gray-200 rounded-lg overflow-hidden p-6;
 }
-.hero-section .dashed-ring.first-ring{
-    @apply -top-[80%]  w-[800px] h-[800px]
+.outlined-card.no-padding{
+    @apply p-0;
 }
-.hero-section .dashed-ring.second-ring{
-    @apply -top-[90%]  w-[1000px] h-[1000px]
+.rounded-circle{
+    @apply size-8 rounded-full flex justify-center items-center shrink-0;
 }
-.hero-section .dashed-ring.third-ring{
-    @apply -top-[110%]  w-[1200px] h-[1200px]
-}
-.hero-section .dashed-ring.forth-ring{
-    @apply -top-[125%]  w-[1400px] h-[1400px]
+.section-link{
+    @apply underline font-medium text-blue-700 cursor-pointer;
 }
 
-.section-title{
-    @apply relative text-lg z-10 overflow-hidden text-center mb-8
+
+.section-header{
+    @apply flex justify-between items-center;
 }
-.section-title:before, .section-title:after {
-   @apply absolute top-1/2 ml-[3%] overflow-hidden w-[47%] h-px bg-gray-200 content-['\a0']
+.section-heading{
+    @apply !text-lg font-medium text-gray-700;
 }
-.section-title:before {
-    @apply -ml-[50%] text-right
+.slider-control{
+    @apply size-6 rounded-full bg-white border border-gray-200 flex justify-center items-center shrink-0 cursor-pointer;
+}
+.recent-job-applications-slider,
+.saved-jobs-slider,
+.recent-followed-businesses-slider{
+    @apply -mr-8;
 }
 
 .cta-banner .dashed-ring{
