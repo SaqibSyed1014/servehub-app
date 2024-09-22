@@ -1,4 +1,4 @@
-name: Deploy Admin App to Staging
+name: Deploy Admin App to Staging Server
 
 on:
   push:
