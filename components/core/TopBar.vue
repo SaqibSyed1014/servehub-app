@@ -3,7 +3,7 @@
     <div class="flex justify-between items-center">
       <div>
         <h1 class="text-2xl text-gray-700">Dashboard</h1>
-        <p class="text-sm text-gray-500">Welcome Olivia</p>
+        <p class="text-sm text-gray-500">Welcome Olivias</p>
       </div>
 
       <div class="w-[500px] flex justify-stretch">
