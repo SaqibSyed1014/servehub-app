@@ -43,5 +43,5 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H -p $REMOTE_PORT $SERVER_IP >> ~/.ssh/known_hosts
           scp -r -P $REMOTE_PORT .output/* $SERVER_USER@$SERVER_IP:$REMOTE_TARGET
-          ssh -p $REMOTE_PORT $SERVER_USER@$SERVER_IP "pm2 reload adminapp
+          ssh -p $REMOTE_PORT $SERVER_USER@$SERVER_IP "pm2 reload adminapp"
           echo "Admin App Staging Deployment completed."
