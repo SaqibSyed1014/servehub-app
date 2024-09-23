@@ -15,10 +15,13 @@ body{
 
 
 input[type=checkbox]{
-    @apply appearance-none w-5 h-5 text-brand-600 bg-gray-200 border border-gray-300 rounded-md focus:ring-0 cursor-pointer
+    @apply appearance-none relative w-5 h-5 text-brand-600 bg-gray-200 border border-gray-300 rounded-md focus:ring-0 cursor-pointer
 }
 input[type=checkbox].rounded-cb{
     @apply w-4 h-4 rounded-full
+}
+input[type=checkbox].rounded-cb:after{
+    @apply content-[""] bg-[url("../icons/cb-tick.svg")] absolute top-1/2 left-1/2 size-2.5 -translate-y-1/2 -translate-x-1/2;
 }
 input[type=radio]{
     @apply appearance-none w-5 h-5  border border-gray-300 rounded-full focus:ring-0 cursor-pointer

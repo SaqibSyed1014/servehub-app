@@ -12,8 +12,11 @@
 }
 
 
-.section-header{
+.section-header {
     @apply flex justify-between items-center;
+}
+.slider-header{
+    @apply pr-8; /* adding padding right for slider header controls */
 }
 .section-heading{
     @apply !text-lg font-medium text-gray-700;

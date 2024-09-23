@@ -45,25 +45,25 @@ const businesses = [
 
 <template>
   <section class="recent-followed-businesses-slider">
-      <Swiper
-          :free-mode="true"
-          :space-between="20"
-          :breakpoints="sliderBreakpoints"
-          class="jobs-slider !flex flex-col-reverse gap-3"
-      >
-        <SectionHeader>
-          <div class="flex items-center gap-4">
-            <h3 class="section-heading">Recent Followed Businesses</h3>
-            <SwiperControls />
-          </div>
-          <p class="section-link no-underline">
-            View All
-          </p>
-        </SectionHeader>
-        <SwiperSlide v-for="business in businesses" class="md:!w-[310px] max-h-full !h-auto my-1">
-          <BusinessCard :business="business" />
-        </SwiperSlide>
-      </Swiper>
+    <Swiper
+        :free-mode="true"
+        :space-between="20"
+        :breakpoints="sliderBreakpoints"
+        class="jobs-slider !flex flex-col-reverse gap-3"
+    >
+      <SectionHeader class="slider-header">
+        <div class="flex items-center gap-4">
+          <h3 class="section-heading">Recent Followed Businesses</h3>
+          <SwiperControls />
+        </div>
+        <p class="section-link no-underline">
+          View All
+        </p>
+      </SectionHeader>
+      <SwiperSlide v-for="business in businesses" class="md:!w-[310px] max-h-full !h-auto my-1">
+        <BusinessCard :business="business" />
+      </SwiperSlide>
+    </Swiper>
   </section>
 </template>
 

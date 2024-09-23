@@ -69,30 +69,27 @@ const blogs = [
 
 <template>
   <section class="recent-job-applications-slider">
-    <div class="flex flex-col gap-4">
-      <div>
-        <Swiper
-            ref="jobSlider"
-            :free-mode="true"
-            :space-between="20"
-            :breakpoints="sliderBreakpoints"
-            class="jobs-slider !flex flex-col-reverse gap-3"
-        >
-          <SectionHeader>
-            <div class="flex items-center gap-4">
-              <h3 class="section-heading">Recent Blog Posts</h3>
-              <SwiperControls />
-            </div>
-            <p class="section-link no-underline">
-              View All
-            </p>
-          </SectionHeader>
-          <SwiperSlide v-for="blog in blogs" class="!w-auto my-1">
-            <BlogPostCard :blog="blog" />
-          </SwiperSlide>
-        </Swiper>
-      </div>
-    </div>
+      <Swiper
+          ref="jobSlider"
+          :free-mode="true"
+          :space-between="20"
+          :breakpoints="sliderBreakpoints"
+          class="jobs-slider !flex flex-col-reverse gap-3"
+      >
+        <SectionHeader class="slider-header">
+          <div class="flex items-center gap-4">
+            <h3 class="section-heading">Recent Blog Posts</h3>
+            <SwiperControls />
+          </div>
+          <p class="section-link no-underline">
+            View All
+          </p>
+        </SectionHeader>
+        <SwiperSlide v-for="blog in blogs" class="!w-auto my-1">
+          <BlogPostCard :blog="blog" />
+        </SwiperSlide>
+      </Swiper>
+
   </section>
 </template>
 

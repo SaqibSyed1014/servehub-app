@@ -63,7 +63,7 @@ const jobs = [
             :breakpoints="sliderBreakpoints"
             class="jobs-slider !flex flex-col-reverse gap-3"
         >
-          <SectionHeader>
+          <SectionHeader class="slider-header">
             <div class="flex items-center gap-4">
               <h3 class="section-heading">Saved Jobs</h3>
               <SwiperControls />
