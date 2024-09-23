@@ -1,13 +1,13 @@
 <template>
   <div class="outlined-card">
-    <div class="flex justify-between items-start text-xs font-medium">
+    <div class="flex justify-between items-start text-xs">
       <img :src="job.logo" alt="Logo">
       <div class="flex gap-2 items-center">
-        <div class="bg-blue-50 text-blue-900 rounded-2xl px-2 py-0.5">
+        <div class="bg-blue-50 text-blue-900 rounded-2xl px-2 py-0.5 font-medium">
           Submitted
         </div>
         <div class="h-4 w-px bg-gray-200"></div>
-        <span>{{ job.readTime }}</span>
+        <span class="text-gray-500">{{ job.readTime }}</span>
       </div>
     </div>
     <div class="mt-4">

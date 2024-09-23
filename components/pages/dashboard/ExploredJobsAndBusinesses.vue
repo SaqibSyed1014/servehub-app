@@ -50,11 +50,11 @@ const exploredBusinesses = [
           <div class="flex justify-between">
             <div class="flex gap-2 items-center font-medium text-lg">
               <SvgoEye class="text-brand-700 size-5"/>
-              <span class="text-brand-700">75</span> Jobs Viewed
+              <div><span class="text-brand-700 font-bold">75</span> Jobs Viewed</div>
             </div>
             <p class="section-link no-underline">View All</p>
           </div>
-          <p class="text-base-500 text-sm">Based on your views, here are jobs you might like:</p>
+          <p class="text-base-500 text-xs">Based on your views, here are jobs you might like:</p>
         </div>
 
         <div class="flex flex-col gap-4">
@@ -72,7 +72,7 @@ const exploredBusinesses = [
                     </div>
                   </div>
                 </div>
-                <p class="text-gray-500 text-sm">{{ job.readTime }}</p>
+                <p class="text-gray-500 text-xs">{{ job.readTime }}</p>
               </div>
             </div>
           </template>
@@ -86,7 +86,7 @@ const exploredBusinesses = [
           <div class="flex justify-between">
             <div class="flex gap-2 items-center font-medium text-lg">
               <SvgoEye class="text-brand-700 size-5"/>
-              <span class="text-brand-700">30</span> Businesses Explored
+              <div><span class="text-brand-700 font-bold">30</span> Businesses Explored</div>
             </div>
             <p class="section-link no-underline">View All</p>
           </div>

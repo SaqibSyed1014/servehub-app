@@ -67,7 +67,7 @@ watch(() => sidebarExpand.value, (val) => {
           <img v-if="sidebarExpand" src="/logos/logo.svg" alt="ServeHub Logo">
           <img v-else src="/logos/clipped-logo.svg" alt="ServeHub Logo">
           <div class="sidebar-toggle" @click="sidebarExpand = !sidebarExpand">
-            <SvgoChevronLeftDouble v-if="sidebarExpand"/>
+            <SvgoChevronLeftDouble v-if="sidebarExpand" />
             <SvgoChevronRightDouble v-else />
           </div>
         </div>
@@ -112,7 +112,7 @@ watch(() => sidebarExpand.value, (val) => {
   @apply absolute -right-7 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 transition rounded-full size-6 border border-gray-200 flex justify-center items-center cursor-pointer;
 }
 .dashboard-sidebar .sidebar-toggle svg{
-  @apply text-gray-500 size-2 transition;
+  @apply text-gray-500 size-4 transition;
 }
 .dashboard-sidebar .dashboard-sidebar-inner{
   @apply flex flex-col justify-between h-full text-base font-semibold;
@@ -124,7 +124,7 @@ watch(() => sidebarExpand.value, (val) => {
   @apply flex flex-col gap-1;
 }
 .dashboard-sidebar .sidebar-links .sidebar-link-item{
-  @apply py-2 px-3 flex items-center gap-3 text-gray-700 rounded-md hover:bg-brand-50 hover:text-brand-600 transition;
+  @apply py-2 px-3 flex items-center gap-3 text-gray-700 rounded-md hover:bg-brand-50 hover:text-brand-700 transition;
 }
 .dashboard-sidebar.sidebar-collapsed .sidebar-links .sidebar-link-item{
   @apply py-[14px];
@@ -147,6 +147,6 @@ watch(() => sidebarExpand.value, (val) => {
 }
 /*.dashboard-sidebar .sidebar-links .sidebar-link-item.router-link-active,*/
 /*.dashboard-sidebar .sidebar-links .sidebar-link-item.router-link-active .sidebar-icon{*/
-/*  @apply text-brand-600;*/
+/*  @apply text-brand-700;*/
 /*}*/
 </style>
