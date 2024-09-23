@@ -18,7 +18,7 @@
         </div>
 
         <div class="pt-6 pb-8 px-4">
-          <div class="flex justify-between">
+          <div class="flex items-center justify-between">
             <div class="border-r border-gray-200 pr-6">
               <div class="flex items-center gap-2 pb-2">
                 <h4 class="text-lg text-gray-700 font-bold">Olivia Rhye</h4>
@@ -48,10 +48,11 @@
                 (4) Show All Pending Task
               </p>
             </div>
-            <div class="flex flex-col justify-stretch h-full">
-              <div class="bg-gray-200 h-full flex-1 w-3"></div>
+
+            <div class="flex flex-col gap-6 items-center relative">
+              <SemiCircleProgressBar />
+              <p class="text-brand-700 underline cursor-pointer">Complete Profile</p>
             </div>
-            <div></div>
           </div>
         </div>
       </div>
@@ -90,3 +91,6 @@
     </div>
   </section>
 </template>
+<script setup lang="ts">
+import SemiCircleProgressBar from "~/components/pages/common/SemiCircleProgressBar.vue";
+</script>

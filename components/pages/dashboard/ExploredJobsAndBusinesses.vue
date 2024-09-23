@@ -48,7 +48,7 @@ const exploredBusinesses = [
       <div class="flex flex-col gap-4">
         <div>
           <div class="flex justify-between">
-            <div class="flex gap-2 items-center">
+            <div class="flex gap-2 items-center font-medium text-lg">
               <SvgoEye class="text-brand-700 size-5"/>
               <span class="text-brand-700">75</span> Jobs Viewed
             </div>
@@ -84,7 +84,7 @@ const exploredBusinesses = [
       <div class="flex flex-col gap-4">
         <div>
           <div class="flex justify-between">
-            <div class="flex gap-2 items-center">
+            <div class="flex gap-2 items-center font-medium text-lg">
               <SvgoEye class="text-brand-700 size-5"/>
               <span class="text-brand-700">30</span> Businesses Explored
             </div>
