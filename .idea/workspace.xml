@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab7611ed-6f98-4ae4-b454-38c2d1a8a2f3" name="Changes" comment="pwa up and running" />
+    <list default="true" id="ab7611ed-6f98-4ae4-b454-38c2d1a8a2f3" name="Changes" comment="port changed in app">
+      <change afterPath="$PROJECT_DIR$/components/pages/common/BlogPostCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/dashboard/ExploredJobsAndBusinesses.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/dashboard/RecentBlogs.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blogs/blog-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blogs/blog-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blogs/blog-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blogs/blog-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/adidas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/dell.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/companies/nike.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +31,7 @@
         <option value="JavaScript File" />
         <option value="Vue Options API Component" />
         <option value="TypeScript File" />
+        <option value="Vue Single File Component" />
         <option value="Vue Composition API Component" />
       </list>
     </option>
@@ -30,11 +45,31 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SaqibSyed1014&quot;
+  }
+}</component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/servehub-llc/admin.git&quot;,
+    &quot;accountId&quot;: &quot;d915a2a7-b29a-4133-a02a-08a11f4e7ba4&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2dXyor2MwC2b8s9QMstpzLr90Az" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -46,34 +81,30 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/DevDock/WebstormProjects/Upwork Projects/ServeHubDash",
-    "list.type.of.created.stylesheet": "CSS",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Ali/Desktop/Upwork/servehub-admin/public/images/blogs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.2.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "settings.editor.selected.configurable": "settings.vue",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.2.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "vue.recent.templates": [
-      "Vue Options API Component",
       "Vue Composition API Component"
     ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ali\Desktop\Upwork\servehub-admin\public\images\blogs" />
+      <recent name="C:\Users\Ali\Desktop\Upwork\servehub-admin\components\pages\dashboard" />
+      <recent name="C:\Users\Ali\Desktop\Upwork\servehub-admin\public\images\companies" />
+      <recent name="C:\Users\Ali\Desktop\Upwork\servehub-admin\assets\icons" />
       <recent name="C:\Users\DevDock\WebstormProjects\Upwork Projects\ServeHubDash\assets\icons" />
-      <recent name="C:\Users\DevDock\WebstormProjects\Upwork Projects\ServeHub\public" />
-      <recent name="C:\Users\DevDock\WebstormProjects\Upwork Projects\ServeHub\public\images\others" />
-      <recent name="C:\Users\DevDock\WebstormProjects\Upwork Projects\ServeHub\pages\businesses" />
-      <recent name="C:\Users\DevDock\WebstormProjects\Upwork Projects\ServeHub\segments" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\DevDock\WebstormProjects\Upwork Projects\ServeHubDash\public\logos" />
@@ -82,6 +113,13 @@
       <recent name="C:\Users\DevDock\WebstormProjects\Upwork Projects\ServeHub\pages\businesses" />
       <recent name="C:\Users\DevDock\WebstormProjects\Upwork Projects\EduJobs\components\pages\job-listings" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.22855.79" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -247,46 +285,12 @@
       <workItem from="1726866835291" duration="2808000" />
       <workItem from="1726869712690" duration="794000" />
       <workItem from="1726920904697" duration="256000" />
-    </task>
-    <task id="LOCAL-00343" summary="logo added in job pin marker">
-      <option name="closed" value="true" />
-      <created>1723487561970</created>
-      <option name="number" value="00343" />
-      <option name="presentableId" value="LOCAL-00343" />
-      <option name="project" value="LOCAL" />
-      <updated>1723487561970</updated>
-    </task>
-    <task id="LOCAL-00344" summary="minor change for test">
-      <option name="closed" value="true" />
-      <created>1723488721517</created>
-      <option name="number" value="00344" />
-      <option name="presentableId" value="LOCAL-00344" />
-      <option name="project" value="LOCAL" />
-      <updated>1723488721517</updated>
-    </task>
-    <task id="LOCAL-00345" summary="minor change for test">
-      <option name="closed" value="true" />
-      <created>1723490892594</created>
-      <option name="number" value="00345" />
-      <option name="presentableId" value="LOCAL-00345" />
-      <option name="project" value="LOCAL" />
-      <updated>1723490892595</updated>
-    </task>
-    <task id="LOCAL-00346" summary="business page added">
-      <option name="closed" value="true" />
-      <created>1723664240153</created>
-      <option name="number" value="00346" />
-      <option name="presentableId" value="LOCAL-00346" />
-      <option name="project" value="LOCAL" />
-      <updated>1723664240153</updated>
-    </task>
-    <task id="LOCAL-00347" summary="OG Meta Info added">
-      <option name="closed" value="true" />
-      <created>1723665116621</created>
-      <option name="number" value="00347" />
-      <option name="presentableId" value="LOCAL-00347" />
-      <option name="project" value="LOCAL" />
-      <updated>1723665116621</updated>
+      <workItem from="1726925143218" duration="3083000" />
+      <workItem from="1726928301402" duration="10846000" />
+      <workItem from="1726951269104" duration="856000" />
+      <workItem from="1726952186987" duration="8779000" />
+      <workItem from="1726985929763" duration="348000" />
+      <workItem from="1727103099233" duration="3474000" />
     </task>
     <task id="LOCAL-00348" summary="business card fixes">
       <option name="closed" value="true" />
@@ -640,7 +644,46 @@
       <option name="project" value="LOCAL" />
       <updated>1726003528403</updated>
     </task>
-    <option name="localTasksCounter" value="392" />
+    <task id="LOCAL-00392" summary="sidebar and topbar added">
+      <created>1726932667270</created>
+      <option name="number" value="00392" />
+      <option name="presentableId" value="LOCAL-00392" />
+      <option name="project" value="LOCAL" />
+      <updated>1726932667273</updated>
+    </task>
+    <task id="LOCAL-00393" summary="sliders added in dashboard page">
+      <option name="closed" value="true" />
+      <created>1726956566360</created>
+      <option name="number" value="00393" />
+      <option name="presentableId" value="LOCAL-00393" />
+      <option name="project" value="LOCAL" />
+      <updated>1726956566360</updated>
+    </task>
+    <task id="LOCAL-00394" summary="nuxt port -&gt; 3001">
+      <option name="closed" value="true" />
+      <created>1726956789500</created>
+      <option name="number" value="00394" />
+      <option name="presentableId" value="LOCAL-00394" />
+      <option name="project" value="LOCAL" />
+      <updated>1726956789500</updated>
+    </task>
+    <task id="LOCAL-00395" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1726958039692</created>
+      <option name="number" value="00395" />
+      <option name="presentableId" value="LOCAL-00395" />
+      <option name="project" value="LOCAL" />
+      <updated>1726958039692</updated>
+    </task>
+    <task id="LOCAL-00396" summary="port changed in app">
+      <option name="closed" value="true" />
+      <created>1726962166584</created>
+      <option name="number" value="00396" />
+      <option name="presentableId" value="LOCAL-00396" />
+      <option name="project" value="LOCAL" />
+      <updated>1726962166584</updated>
+    </task>
+    <option name="localTasksCounter" value="397" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,7 +700,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="staging" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -670,11 +713,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="minor fix" />
-    <MESSAGE value="role type filters updated" />
-    <MESSAGE value="fixes" />
-    <MESSAGE value="blog category filtration fix" />
-    <MESSAGE value="location search bug fixed" />
     <MESSAGE value="environments fixes" />
     <MESSAGE value="new header appended + api call structure updated" />
     <MESSAGE value="reload bug fixed" />
@@ -695,7 +733,12 @@
     <MESSAGE value="netlify.toml added" />
     <MESSAGE value="pwa fixes" />
     <MESSAGE value="pwa up and running" />
-    <option name="LAST_COMMIT_MESSAGE" value="pwa up and running" />
+    <MESSAGE value="sidebar and topbar added" />
+    <MESSAGE value="sliders added in dashboard page" />
+    <MESSAGE value="nuxt port -&gt; 3001" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="port changed in app" />
+    <option name="LAST_COMMIT_MESSAGE" value="port changed in app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

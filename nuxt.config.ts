@@ -8,7 +8,6 @@ const appEnv :EnvType  = process.env.NUXT_ENV as EnvType || 'development'
 
 export default defineNuxtConfig({
     app: {
-        port: 3001,
         head: {
             title: 'ServeHub',
             charset: 'utf-8',
@@ -52,9 +51,6 @@ export default defineNuxtConfig({
                 "fast-deep-equal",
             ],
         },
-    },
-    devServer: {
-        port: 3001
     },
     modules: [
         '@nuxtjs/tailwindcss',
