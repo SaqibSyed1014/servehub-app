@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab7611ed-6f98-4ae4-b454-38c2d1a8a2f3" name="Changes" comment="port changed in app">
-      <change afterPath="$PROJECT_DIR$/components/pages/common/BlogPostCard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/dashboard/ExploredJobsAndBusinesses.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/dashboard/RecentBlogs.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/blogs/blog-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/blogs/blog-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/blogs/blog-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/blogs/blog-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/companies/adidas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/companies/dell.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/companies/nike.png" afterDir="false" />
+    <list default="true" id="ab7611ed-6f98-4ae4-b454-38c2d1a8a2f3" name="Changes" comment="Explore jobs and businesses and recent blogs added">
+      <change afterPath="$PROJECT_DIR$/assets/icons/chevron-right-double.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logos/clipped-logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/core/BaseSideBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/core/BaseSideBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/dashboard/ExploredJobsAndBusinesses.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/dashboard/ExploredJobsAndBusinesses.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,15 +283,7 @@
       <workItem from="1726951269104" duration="856000" />
       <workItem from="1726952186987" duration="8779000" />
       <workItem from="1726985929763" duration="348000" />
-      <workItem from="1727103099233" duration="3474000" />
-    </task>
-    <task id="LOCAL-00348" summary="business card fixes">
-      <option name="closed" value="true" />
-      <created>1723668068825</created>
-      <option name="number" value="00348" />
-      <option name="presentableId" value="LOCAL-00348" />
-      <option name="project" value="LOCAL" />
-      <updated>1723668068825</updated>
+      <workItem from="1727103099233" duration="6334000" />
     </task>
     <task id="LOCAL-00349" summary="business filters refactored">
       <option name="closed" value="true" />
@@ -683,7 +668,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726962166584</updated>
     </task>
-    <option name="localTasksCounter" value="397" />
+    <task id="LOCAL-00397" summary="Explore jobs and businesses and recent blogs added">
+      <option name="closed" value="true" />
+      <created>1727118339096</created>
+      <option name="number" value="00397" />
+      <option name="presentableId" value="LOCAL-00397" />
+      <option name="project" value="LOCAL" />
+      <updated>1727118339108</updated>
+    </task>
+    <option name="localTasksCounter" value="398" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -713,7 +706,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="environments fixes" />
     <MESSAGE value="new header appended + api call structure updated" />
     <MESSAGE value="reload bug fixed" />
     <MESSAGE value="bug fixed" />
@@ -738,7 +730,8 @@
     <MESSAGE value="nuxt port -&gt; 3001" />
     <MESSAGE value="fixes" />
     <MESSAGE value="port changed in app" />
-    <option name="LAST_COMMIT_MESSAGE" value="port changed in app" />
+    <MESSAGE value="Explore jobs and businesses and recent blogs added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Explore jobs and businesses and recent blogs added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

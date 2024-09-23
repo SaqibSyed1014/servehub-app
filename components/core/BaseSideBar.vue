@@ -49,23 +49,33 @@ const sidebarBottomLinks = [
     icon: 'SvgoAddUsers'
   }
 ]
+
+const emit = defineEmits(['sidebar-toggled']);
+
+let sidebarExpand = ref(true);
+
+watch(() => sidebarExpand.value, (val) => {
+  emit('sidebar-toggled', val);
+})
 </script>
 
 <template>
-  <aside class="dashboard-sidebar">
+  <aside class="dashboard-sidebar" :class="[sidebarExpand ? 'sidebar-expanded' : 'sidebar-collapsed']">
     <div class="dashboard-sidebar-inner">
       <div class="dashboard-sidebar-upper">
-        <div class="relative">
-          <img src="/logos/logo.svg" alt="ServeHub Logo">
-          <div class="absolute -right-9 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 transition rounded-full size-6 border border-gray-200 flex justify-center items-center cursor-pointer">
-            <SvgoChevronLeftDouble class="text-gray-500 size-2" />
+        <div class="dashboard-sidebar-logo">
+          <img v-if="sidebarExpand" src="/logos/logo.svg" alt="ServeHub Logo">
+          <img v-else src="/logos/clipped-logo.svg" alt="ServeHub Logo">
+          <div class="sidebar-toggle" @click="sidebarExpand = !sidebarExpand">
+            <SvgoChevronLeftDouble v-if="sidebarExpand"/>
+            <SvgoChevronRightDouble v-else />
           </div>
         </div>
         <ul class="sidebar-links">
           <template v-for="(link, i) in sidebarLinks" :key="i">
             <RouterLink :to="link.path" class="sidebar-link-item">
               <component class="sidebar-icon" :is="link.icon" />
-              {{ link.label }}
+              <p>{{ link.label }}</p>
             </RouterLink>
           </template>
         </ul>
@@ -76,7 +86,7 @@ const sidebarBottomLinks = [
           <template v-for="(link, i) in sidebarBottomLinks" :key="i">
             <RouterLink :to="link.path" class="sidebar-link-item">
               <component class="sidebar-icon" :is="link.icon" />
-              {{ link.label }}
+              <p>{{ link.label }}</p>
             </RouterLink>
           </template>
         </ul>
@@ -87,7 +97,22 @@ const sidebarBottomLinks = [
 
 <style>
 .dashboard-sidebar{
-  @apply fixed left-0 w-[312px] h-screen py-8 px-6 border-r border-gray-200;
+  @apply fixed left-0 h-screen py-8 px-4 border-r border-gray-200 transition-all duration-300;
+}
+.dashboard-sidebar.sidebar-expanded{
+  @apply w-[312px];
+}
+.dashboard-sidebar.sidebar-collapsed{
+  @apply w-[80px];
+}
+.dashboard-sidebar .dashboard-sidebar-logo{
+  @apply relative px-2 h-8;
+}
+.dashboard-sidebar .sidebar-toggle{
+  @apply absolute -right-7 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 transition rounded-full size-6 border border-gray-200 flex justify-center items-center cursor-pointer;
+}
+.dashboard-sidebar .sidebar-toggle svg{
+  @apply text-gray-500 size-2 transition;
 }
 .dashboard-sidebar .dashboard-sidebar-inner{
   @apply flex flex-col justify-between h-full text-base font-semibold;
@@ -99,7 +124,16 @@ const sidebarBottomLinks = [
   @apply flex flex-col gap-1;
 }
 .dashboard-sidebar .sidebar-links .sidebar-link-item{
-  @apply py-2 px-3 flex items-center gap-3 text-gray-700 rounded-lg hover:bg-brand-50 hover:text-brand-600 transition;
+  @apply py-2 px-3 flex items-center gap-3 text-gray-700 rounded-md hover:bg-brand-50 hover:text-brand-600 transition;
+}
+.dashboard-sidebar.sidebar-collapsed .sidebar-links .sidebar-link-item{
+  @apply py-[14px];
+}
+.dashboard-sidebar.sidebar-collapsed .sidebar-links .sidebar-link-item svg{
+  @apply pl-0.5;
+}
+.dashboard-sidebar.sidebar-collapsed .sidebar-link-item p{
+  @apply hidden;
 }
 .dashboard-sidebar .sidebar-links .sidebar-link-item .sidebar-icon{
   @apply size-5 text-gray-500;

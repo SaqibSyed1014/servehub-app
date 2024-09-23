@@ -57,7 +57,7 @@
       </div>
     </div>
     <div class="col-span-12 xl:col-span-4 flex flex-col gap-6">
-      <div class="outlined-card">
+      <div class="outlined-card h-full">
         <div class="flex items-center gap-4 pb-2">
           <div class="rounded-circle bg-[#3E4784] border-4 border-[#293056]">
             <SvgoUser class="size-3 text-white"/>
@@ -72,7 +72,7 @@
           <SvgoApplication class="size-16 text-[293056] opacity-20" />
         </div>
       </div>
-      <div class="outlined-card">
+      <div class="outlined-card h-full">
         <div class="flex items-center gap-4 pb-2">
           <div class="rounded-circle bg-warning-400 border-4 border-warning-500">
             <SvgoDataFlow class="size-3 text-white"/>
