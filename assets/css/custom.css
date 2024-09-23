@@ -8,7 +8,7 @@
     @apply size-8 rounded-full flex justify-center items-center shrink-0;
 }
 .section-link{
-    @apply underline font-medium text-blue-700 cursor-pointer;
+    @apply text-sm underline font-medium text-blue-700 cursor-pointer;
 }
 
 

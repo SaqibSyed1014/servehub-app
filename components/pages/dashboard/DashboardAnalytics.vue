@@ -18,15 +18,15 @@
         </div>
 
         <div class="pt-6 pb-8 px-4">
-          <div class="flex justify-between gap-6">
-            <div>
+          <div class="flex justify-between">
+            <div class="border-r border-gray-200 pr-6">
               <div class="flex items-center gap-2 pb-2">
                 <h4 class="text-lg text-gray-700 font-bold">Olivia Rhye</h4>
                 <div class="bg-warning-50 text-warning-700 rounded-2xl font-medium text-xs py-0.5 px-2">
                   Strength: Medium
                 </div>
               </div>
-              <div>
+              <div class="">
                 <div class="checkbox-group">
                   <input type="checkbox" class="rounded-cb">
                   <p>Lorem ipsum dolor sit amet consecte liquam euismod ac sagittis vitae.</p>
@@ -37,11 +37,11 @@
                 </div>
                 <div class="checkbox-group">
                   <input type="checkbox" class="rounded-cb">
-                  <p>Lorem ipsum dolor sit amet consecte liquam euismod ac sagittis vitae.</p>
+                  <p>Lorem ipsum dolor sit amet consecte liquam</p>
                 </div>
                 <div class="checkbox-group">
                   <input type="checkbox" class="rounded-cb">
-                  <p>Lorem ipsum dolor sit amet consecte liquam euismod ac sagittis vitae.</p>
+                  <p>Lorem ipsum dolor sit amet consecte</p>
                 </div>
               </div>
               <p class="section-link mt-8">
@@ -67,7 +67,7 @@
             <p class="text-3xl font-semibold">125</p>
           </div>
         </div>
-        <p class="text-xs text-gray-500">Application applied last year were 240</p>
+        <p class="text-xs text-gray-500">Application applied last year were <strong>240</strong></p>
         <div class="absolute -right-3 -bottom-3">
           <SvgoApplication class="size-16 text-[293056] opacity-20" />
         </div>
@@ -82,7 +82,7 @@
             <p class="text-3xl font-semibold">47</p>
           </div>
         </div>
-        <p class="text-xs text-gray-500">Application applied last year were 240</p>
+        <p class="text-xs text-gray-500">Application applied last year were <strong>240</strong></p>
         <div class="absolute -right-3 -bottom-3">
           <SvgoDataFlow class="size-16 text-warning-500 opacity-30" />
         </div>
@@ -90,10 +90,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-</script>
-
-<style scoped>
-
-</style>

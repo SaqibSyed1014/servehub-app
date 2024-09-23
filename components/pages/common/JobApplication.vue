@@ -6,6 +6,7 @@
         <div class="bg-blue-50 text-blue-900 rounded-2xl px-2 py-0.5">
           Submitted
         </div>
+        <div class="h-4 w-px bg-gray-200"></div>
         <span>{{ job.readTime }}</span>
       </div>
     </div>
@@ -15,7 +16,7 @@
       </h4>
       <div class="flex gap-2 items-center text-sm font-medium">
         <p>{{ job.company }}</p>
-        <div class="h-full w-2 bg-gray-200"></div>
+        <div class="h-4 w-px bg-gray-200"></div>
         <p class="text-gray-500">{{ job.type }}</p>
       </div>
       <p class="text-gray-500 pt-3">{{ job.description }}</p>

@@ -13,6 +13,22 @@ let isSidebarExpand = ref(true);
       <main>
         <slot />
       </main>
+      <div class="my-8 w-full h-px bg-gray-200"></div>
+      <footer class="flex gap-6">
+        <p class="text-gray-500">© 2024 ServeHub, LLC.</p>
+        <a href="">Privacy Policy</a>
+        <a href="">API</a>
+        <a href="">Contact</a>
+      </footer>
     </div>
   </div>
 </template>
+
+<style scoped lang="postcss">
+footer{
+  @apply text-sm;
+}
+footer a{
+  @apply font-medium underline hover:no-underline
+}
+</style>

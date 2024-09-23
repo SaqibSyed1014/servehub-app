@@ -15,7 +15,7 @@ defineProps({
       <div>
         <div class="flex items-center gap-2 mb-2">
           <img :src="blog.authorImage" alt="Author" class="size-6 rounded-full">
-          <p class="text-sm">{{ blog.authorName }}</p>
+          <p class="text-sm font-medium">{{ blog.authorName }}</p>
         </div>
         <p class="text-gray-500 text-sm">{{ blog.datePosted }}</p>
       </div>

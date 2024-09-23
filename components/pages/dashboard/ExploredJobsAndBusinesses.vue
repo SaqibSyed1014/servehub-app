@@ -65,9 +65,9 @@ const exploredBusinesses = [
                   <img :src="job.logo" alt="" class="size-10 shrink-0">
                   <div>
                     <h6 class="text-base">{{ job.title }}</h6>
-                    <div class="flex gap-2 text-sm font-medium mt-1">
+                    <div class="flex gap-2 items-center text-sm font-medium mt-1">
                       <p>{{ job.company }}</p>
-                      <div class="h-full w-2 bg-gray-200"></div>
+                      <div class="h-4 w-px bg-gray-200"></div>
                       <p class="text-gray-500">{{ job.type }}</p>
                     </div>
                   </div>
