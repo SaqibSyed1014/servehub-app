@@ -20,9 +20,3 @@ defineProps({
 })
 </script>
 
-<style scoped>
-.unfollow-btn {
-  @apply w-full py-2 rounded-lg bg-brand-50 text-brand-700 text-center text-sm font-semibold;
-  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.1);
-}
-</style>

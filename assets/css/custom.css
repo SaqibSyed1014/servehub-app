@@ -10,6 +10,16 @@
 .section-link{
     @apply text-sm underline font-medium text-blue-700 cursor-pointer;
 }
+.unfollow-btn {
+    @apply w-full py-2 px-[18px] rounded-lg bg-brand-50 text-brand-700 text-center text-sm font-semibold transition hover:bg-brand-100;
+    box-shadow: 0 1px 3px rgba(16, 24, 40, 0.1);
+}
+.follow-btn{
+    @apply rounded-lg bg-brand-600 border border-black/20 py-2 px-[18px] font-semibold text-sm text-white hover:opacity-70 transition;
+}
+.load-more{
+    @apply rounded-lg text-gray-700 border border-gray-300 w-[200px] py-2.5 px-3 font-semibold text-sm shadow-[0_0_0_1px_#1018282E_inset] transition hover:bg-gray-50;
+}
 
 
 .section-header {

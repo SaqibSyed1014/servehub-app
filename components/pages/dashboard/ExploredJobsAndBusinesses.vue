@@ -121,8 +121,3 @@ const exploredBusinesses = [
   </div>
 </template>
 
-<style scoped lang="postcss">
-.follow-btn{
-  @apply rounded-lg bg-brand-600 border border-black/20 py-2 px-[18px] font-semibold text-sm text-white hover:opacity-70 transition;
-}
-</style>

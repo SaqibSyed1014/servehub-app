@@ -84,12 +84,3 @@ const savedJobs = [
     </div>
   </div>
 </template>
-
-<style scoped lang="postcss">
-.test{
-  color: rgba(16, 24, 40, 0.18);
-}
-.load-more{
-  @apply rounded-lg text-gray-700 border border-gray-300 w-[200px] py-2.5 px-3 font-semibold text-sm shadow-[0_0_0_1px_#1018282E_inset] transition hover:bg-gray-50;
-}
-</style>
