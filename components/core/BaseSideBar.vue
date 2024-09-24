@@ -16,7 +16,16 @@ const sidebarLinks = [
     label: 'Manage Jobs',
     path: '/manage-jobs',
     icon: 'SvgoPlainBriefCase',
-    suLinks: []
+    suLinks: [
+      {
+        label: 'Saved Jobs',
+        path: '/saved-jobs',
+      },
+      {
+        label: 'Browser Jobs',
+        path: '/browse-jobs',
+      }
+    ]
   },
   {
     label: 'Followed Businesses',
@@ -53,8 +62,10 @@ const sidebarBottomLinks = [
 const emit = defineEmits(['sidebar-toggled']);
 
 let sidebarExpand = ref(true);
+let manageJobsMenuDropdownExpand = ref(false);
 
 watch(() => sidebarExpand.value, (val) => {
+  if (!val) manageJobsMenuDropdownExpand.value = false;
   emit('sidebar-toggled', val);
 })
 </script>
@@ -73,10 +84,32 @@ watch(() => sidebarExpand.value, (val) => {
         </div>
         <ul class="sidebar-links">
           <template v-for="(link, i) in sidebarLinks" :key="i">
-            <RouterLink :to="link.path" class="sidebar-link-item">
+            <RouterLink v-if="!link.suLinks.length" :to="link.path" class="sidebar-link-item">
               <component class="sidebar-icon" :is="link.icon" />
               <p>{{ link.label }}</p>
             </RouterLink>
+            <div v-else>
+              <div
+                  class="sidebar-link-item has-sub-links"
+                  :class="{ 'expanded-sub-menu': manageJobsMenuDropdownExpand }"
+                  @click="manageJobsMenuDropdownExpand = !manageJobsMenuDropdownExpand"
+              >
+                <div class="flex gap-3">
+                  <component class="sidebar-icon" :is="link.icon"/>
+                  <p>{{ link.label }}</p>
+                </div>
+                <SvgoChevronUp v-if="manageJobsMenuDropdownExpand" class="size-4 text-gray-500" />
+                <SvgoChevronDown v-else class="size-4 text-gray-500" />
+              </div>
+              <div v-if="manageJobsMenuDropdownExpand" class="flex flex-col gap-1">
+                <template v-for="subLink in link.suLinks">
+                  <RouterLink :to="subLink.path" class="sidebar-link-item">
+                    <div class="sidebar-icon"/>
+                    <p>{{ subLink.label }}</p>
+                  </RouterLink>
+                </template>
+              </div>
+            </div>
           </template>
         </ul>
       </div>
@@ -124,12 +157,18 @@ watch(() => sidebarExpand.value, (val) => {
   @apply flex flex-col gap-1;
 }
 .dashboard-sidebar .sidebar-links .sidebar-link-item{
-  @apply py-2 px-3 flex items-center gap-3 text-gray-700 rounded-md hover:bg-brand-50 hover:text-brand-700 transition;
+  @apply py-2 px-3 flex items-center gap-3 text-gray-700 rounded-md cursor-pointer hover:bg-brand-50 hover:text-brand-700 transition;
+}
+ .dashboard-sidebar .sidebar-links .sidebar-link-item.expanded-sub-menu{
+  @apply text-brand-700 bg-brand-50;
+ }
+.dashboard-sidebar .sidebar-links .sidebar-link-item.has-sub-links{
+  @apply flex justify-between items-center;
 }
 .dashboard-sidebar.sidebar-collapsed .sidebar-links .sidebar-link-item{
   @apply py-[14px];
 }
-.dashboard-sidebar.sidebar-collapsed .sidebar-links .sidebar-link-item svg{
+.dashboard-sidebar.sidebar-collapsed .sidebar-links .sidebar-link-item .sidebar-icon{
   @apply pl-0.5;
 }
 .dashboard-sidebar.sidebar-collapsed .sidebar-link-item p{
@@ -139,7 +178,8 @@ watch(() => sidebarExpand.value, (val) => {
   @apply size-5 text-gray-500;
 }
 .dashboard-sidebar .sidebar-links .sidebar-link-item:hover,
-.dashboard-sidebar .sidebar-links .sidebar-link-item:hover .sidebar-icon{
+.dashboard-sidebar .sidebar-links .sidebar-link-item:hover .sidebar-icon,
+.dashboard-sidebar .sidebar-links .sidebar-link-item.expanded-sub-menu .sidebar-icon{
   @apply text-brand-700;
 }
 .dashboard-sidebar-lower{
