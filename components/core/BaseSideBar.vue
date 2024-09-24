@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const sidebarLinks = [
+import { isDevEnv } from "~/segments/utils";
+
+let sidebarLinks = ref([
   {
     label: 'Dashboard',
     path: '/',
@@ -23,7 +25,7 @@ const sidebarLinks = [
       },
       {
         label: 'Browser Jobs',
-        path: '/browse-jobs',
+        path: `${isDevEnv() ? 'https://devweb.servehub.io' : 'https://www.servehub.io'}/jobs`
       }
     ]
   },
@@ -39,7 +41,7 @@ const sidebarLinks = [
     icon: 'SvgoUser',
     suLinks: []
   }
-]
+]);
 
 const sidebarBottomLinks = [
   {
@@ -74,9 +76,14 @@ const route = useRoute();
 watchEffect(() => {
   if (route.path !== '/saved-jobs') manageJobsMenuDropdownExpand.value = false;
 })
+
+if (isDevEnv()) {
+
+}
 </script>
 
 <template>
+  {{jobsLink}}
   <aside class="dashboard-sidebar" :class="[sidebarExpand ? 'sidebar-expanded' : 'sidebar-collapsed']">
     <div class="dashboard-sidebar-inner">
       <div class="dashboard-sidebar-upper">
