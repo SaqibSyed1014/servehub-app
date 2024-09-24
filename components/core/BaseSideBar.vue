@@ -68,6 +68,12 @@ watch(() => sidebarExpand.value, (val) => {
   if (!val) manageJobsMenuDropdownExpand.value = false;
   emit('sidebar-toggled', val);
 })
+
+const route = useRoute();
+
+watchEffect(() => {
+  if (route.path !== '/saved-jobs') manageJobsMenuDropdownExpand.value = false;
+})
 </script>
 
 <template>
@@ -101,7 +107,7 @@ watch(() => sidebarExpand.value, (val) => {
                 <SvgoChevronUp v-if="manageJobsMenuDropdownExpand" class="size-4 text-gray-500" />
                 <SvgoChevronDown v-else class="size-4 text-gray-500" />
               </div>
-              <div v-if="manageJobsMenuDropdownExpand" class="flex flex-col gap-1">
+              <div v-if="manageJobsMenuDropdownExpand" class="flex flex-col gap-1 mt-2">
                 <template v-for="subLink in link.suLinks">
                   <NuxtLink :to="subLink.path" class="sidebar-link-item">
                     <div class="sidebar-icon"/>

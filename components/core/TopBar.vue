@@ -1,9 +1,22 @@
+<script setup lang="ts">
+const route = useRoute();
+
+let title = ref('');
+let subTitle = ref('');
+
+watchEffect(() => {
+  const { pageTitle, pageSubtitle } = route.meta;
+  title.value = pageTitle;
+  subTitle.value = pageSubtitle;
+})
+</script>
+
 <template>
   <div class="pb-6">
     <div class="flex justify-between items-center">
       <div>
-        <h1 class="text-2xl text-gray-700">Dashboard</h1>
-        <p class="text-sm text-gray-500">Welcome Olivias</p>
+        <h1 class="text-2xl text-gray-700">{{ title }}</h1>
+        <p class="text-sm text-gray-500">{{ subTitle }}</p>
       </div>
 
       <div class="w-[500px] flex justify-stretch">
@@ -32,9 +45,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-</script>
 
 <style scoped lang="postcss">
 .top-bar-icon{
