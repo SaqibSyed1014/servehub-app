@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab7611ed-6f98-4ae4-b454-38c2d1a8a2f3" name="Changes" comment="Explore jobs and businesses and recent blogs added">
-      <change afterPath="$PROJECT_DIR$/assets/icons/chevron-right-double.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logos/clipped-logo.svg" afterDir="false" />
+    <list default="true" id="ab7611ed-6f98-4ae4-b454-38c2d1a8a2f3" name="Changes" comment="sidebar sub menus added">
+      <change afterPath="$PROJECT_DIR$/assets/icons/bookmarked.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/common/PageInfoBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/common/PageWrapper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/common/SectionDivider.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/saved-jobs/RecommendedJobs.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/saved-jobs/SavedAndRecommendedJobs.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/saved-jobs/SavedJobsList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/saved-jobs.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/core/BaseSideBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/core/BaseSideBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/dashboard/ExploredJobsAndBusinesses.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/dashboard/ExploredJobsAndBusinesses.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/common/AccordionCollapse.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/common/FilterSection.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/common/Footer.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/common/MenuSideBar.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,25 +81,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Ali/Desktop/Upwork/servehub-admin/public/images/blogs",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.vue",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.2.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ali/Desktop/Upwork/servehub-admin/public/images/blogs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.vue&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.2.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Ali\Desktop\Upwork\servehub-admin\public\images\blogs" />
@@ -283,55 +292,8 @@
       <workItem from="1726951269104" duration="856000" />
       <workItem from="1726952186987" duration="8779000" />
       <workItem from="1726985929763" duration="348000" />
-      <workItem from="1727103099233" duration="6334000" />
-    </task>
-    <task id="LOCAL-00349" summary="business filters refactored">
-      <option name="closed" value="true" />
-      <created>1723706550112</created>
-      <option name="number" value="00349" />
-      <option name="presentableId" value="LOCAL-00349" />
-      <option name="project" value="LOCAL" />
-      <updated>1723706550112</updated>
-    </task>
-    <task id="LOCAL-00350" summary="business filters functional">
-      <option name="closed" value="true" />
-      <created>1723728450008</created>
-      <option name="number" value="00350" />
-      <option name="presentableId" value="LOCAL-00350" />
-      <option name="project" value="LOCAL" />
-      <updated>1723728450009</updated>
-    </task>
-    <task id="LOCAL-00351" summary="UI changes in Business Listing">
-      <option name="closed" value="true" />
-      <created>1723729442481</created>
-      <option name="number" value="00351" />
-      <option name="presentableId" value="LOCAL-00351" />
-      <option name="project" value="LOCAL" />
-      <updated>1723729442481</updated>
-    </task>
-    <task id="LOCAL-00352" summary="minor bug fixed in business">
-      <option name="closed" value="true" />
-      <created>1723729798441</created>
-      <option name="number" value="00352" />
-      <option name="presentableId" value="LOCAL-00352" />
-      <option name="project" value="LOCAL" />
-      <updated>1723729798441</updated>
-    </task>
-    <task id="LOCAL-00353" summary="font size fix">
-      <option name="closed" value="true" />
-      <created>1723730346244</created>
-      <option name="number" value="00353" />
-      <option name="presentableId" value="LOCAL-00353" />
-      <option name="project" value="LOCAL" />
-      <updated>1723730346244</updated>
-    </task>
-    <task id="LOCAL-00354" summary="navigation bug fixed due to blog attributes">
-      <option name="closed" value="true" />
-      <created>1723731133933</created>
-      <option name="number" value="00354" />
-      <option name="presentableId" value="LOCAL-00354" />
-      <option name="project" value="LOCAL" />
-      <updated>1723731133933</updated>
+      <workItem from="1727103099233" duration="14561000" />
+      <workItem from="1727201876108" duration="4771000" />
     </task>
     <task id="LOCAL-00355" summary="blog's attributes key removed">
       <option name="closed" value="true" />
@@ -676,7 +638,55 @@
       <option name="project" value="LOCAL" />
       <updated>1727118339108</updated>
     </task>
-    <option name="localTasksCounter" value="398" />
+    <task id="LOCAL-00398" summary="sidebar toggling + UI fixes">
+      <option name="closed" value="true" />
+      <created>1727121104873</created>
+      <option name="number" value="00398" />
+      <option name="presentableId" value="LOCAL-00398" />
+      <option name="project" value="LOCAL" />
+      <updated>1727121104873</updated>
+    </task>
+    <task id="LOCAL-00399" summary="bottom footer + fixes">
+      <option name="closed" value="true" />
+      <created>1727122216305</created>
+      <option name="number" value="00399" />
+      <option name="presentableId" value="LOCAL-00399" />
+      <option name="project" value="LOCAL" />
+      <updated>1727122216305</updated>
+    </task>
+    <task id="LOCAL-00400" summary="semi-circle progress added">
+      <option name="closed" value="true" />
+      <created>1727127014819</created>
+      <option name="number" value="00400" />
+      <option name="presentableId" value="LOCAL-00400" />
+      <option name="project" value="LOCAL" />
+      <updated>1727127014819</updated>
+    </task>
+    <task id="LOCAL-00401" summary="checkbox updated + slider header spacing fixed">
+      <option name="closed" value="true" />
+      <created>1727128147775</created>
+      <option name="number" value="00401" />
+      <option name="presentableId" value="LOCAL-00401" />
+      <option name="project" value="LOCAL" />
+      <updated>1727128147775</updated>
+    </task>
+    <task id="LOCAL-00402" summary="UI changes and fixes">
+      <option name="closed" value="true" />
+      <created>1727128980977</created>
+      <option name="number" value="00402" />
+      <option name="presentableId" value="LOCAL-00402" />
+      <option name="project" value="LOCAL" />
+      <updated>1727128980978</updated>
+    </task>
+    <task id="LOCAL-00403" summary="sidebar sub menus added">
+      <option name="closed" value="true" />
+      <created>1727204450413</created>
+      <option name="number" value="00403" />
+      <option name="presentableId" value="LOCAL-00403" />
+      <option name="project" value="LOCAL" />
+      <updated>1727204450414</updated>
+    </task>
+    <option name="localTasksCounter" value="404" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -706,12 +716,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new header appended + api call structure updated" />
-    <MESSAGE value="reload bug fixed" />
-    <MESSAGE value="bug fixed" />
-    <MESSAGE value="svg fix" />
-    <MESSAGE value="test staging environment" />
-    <MESSAGE value="test" />
     <MESSAGE value="testing" />
     <MESSAGE value="testing to nuxt" />
     <MESSAGE value="nuxt env variable added" />
@@ -731,7 +735,13 @@
     <MESSAGE value="fixes" />
     <MESSAGE value="port changed in app" />
     <MESSAGE value="Explore jobs and businesses and recent blogs added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Explore jobs and businesses and recent blogs added" />
+    <MESSAGE value="sidebar toggling + UI fixes" />
+    <MESSAGE value="bottom footer + fixes" />
+    <MESSAGE value="semi-circle progress added" />
+    <MESSAGE value="checkbox updated + slider header spacing fixed" />
+    <MESSAGE value="UI changes and fixes" />
+    <MESSAGE value="sidebar sub menus added" />
+    <option name="LAST_COMMIT_MESSAGE" value="sidebar sub menus added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

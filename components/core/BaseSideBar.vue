@@ -84,10 +84,10 @@ watch(() => sidebarExpand.value, (val) => {
         </div>
         <ul class="sidebar-links">
           <template v-for="(link, i) in sidebarLinks" :key="i">
-            <RouterLink v-if="!link.suLinks.length" :to="link.path" class="sidebar-link-item">
+            <NuxtLink v-if="!link.suLinks.length" :to="link.path" class="sidebar-link-item">
               <component class="sidebar-icon" :is="link.icon" />
               <p>{{ link.label }}</p>
-            </RouterLink>
+            </NuxtLink>
             <div v-else>
               <div
                   class="sidebar-link-item has-sub-links"
@@ -103,10 +103,10 @@ watch(() => sidebarExpand.value, (val) => {
               </div>
               <div v-if="manageJobsMenuDropdownExpand" class="flex flex-col gap-1">
                 <template v-for="subLink in link.suLinks">
-                  <RouterLink :to="subLink.path" class="sidebar-link-item">
+                  <NuxtLink :to="subLink.path" class="sidebar-link-item">
                     <div class="sidebar-icon"/>
                     <p>{{ subLink.label }}</p>
-                  </RouterLink>
+                  </NuxtLink>
                 </template>
               </div>
             </div>
@@ -117,10 +117,10 @@ watch(() => sidebarExpand.value, (val) => {
       <div class="dashboard-sidebar-lower">
         <ul class="sidebar-links">
           <template v-for="(link, i) in sidebarBottomLinks" :key="i">
-            <RouterLink :to="link.path" class="sidebar-link-item">
+            <NuxtLink :to="link.path" class="sidebar-link-item">
               <component class="sidebar-icon" :is="link.icon" />
               <p>{{ link.label }}</p>
-            </RouterLink>
+            </NuxtLink>
           </template>
         </ul>
       </div>

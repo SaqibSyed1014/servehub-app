@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import BaseSideBar from "../components/core/BaseSideBar.vue";
 import TopBar from "../components/core/TopBar.vue";
+import PageWrapper from "~/components/pages/common/PageWrapper.vue";
+import SectionDivider from "~/components/pages/common/SectionDivider.vue";
 
 let isSidebarExpand = ref(true);
 </script>
@@ -10,10 +12,10 @@ let isSidebarExpand = ref(true);
     <BaseSideBar @sidebar-toggled="(val) => isSidebarExpand = val" />
     <div class="overflow-y-auto p-8 transition-all duration-300" :class="[ isSidebarExpand ? 'ml-[312px]' : 'ml-[80px]' ]">
       <TopBar />
-      <main>
+      <PageWrapper>
         <slot />
-      </main>
-      <div class="my-8 w-full h-px bg-gray-200"></div>
+      </PageWrapper>
+      <SectionDivider />
       <footer class="flex gap-6">
         <p class="text-gray-500">© 2024 ServeHub, LLC.</p>
         <a href="">Privacy Policy</a>
