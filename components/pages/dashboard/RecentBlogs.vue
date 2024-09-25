@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import {ref} from 'vue';
 import SectionHeader from "../common/SectionHeader.vue";
-import JobApplication from "../common/JobApplication.vue";
 
 const jobSlider = ref(null)
 

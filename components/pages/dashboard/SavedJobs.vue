@@ -58,10 +58,11 @@ const jobs = [
 <template>
   <section class="saved-jobs-slider">
      <Swiper
-            :free-mode="true"
-            :space-between="20"
-            :breakpoints="sliderBreakpoints"
-            class="jobs-slider !flex flex-col-reverse gap-3"
+         ref="jobSlider"
+          :free-mode="true"
+          :space-between="20"
+          :breakpoints="sliderBreakpoints"
+          class="jobs-slider !flex flex-col-reverse gap-3"
         >
           <SectionHeader class="slider-header">
             <div class="flex items-center gap-4">
