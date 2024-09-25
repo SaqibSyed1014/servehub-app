@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import SectionHeader from "../common/SectionHeader.vue";
 
-const jobSlider = ref(null)
-
 const sliderBreakpoints = {
   320: {
     slidesPerView: 1
@@ -44,7 +42,6 @@ const businesses = [
 <template>
   <section class="recent-followed-businesses-slider">
     <Swiper
-        ref="jobSlider"
         :free-mode="true"
         :space-between="20"
         :breakpoints="sliderBreakpoints"

@@ -3,8 +3,6 @@ import {ref} from 'vue';
 import SectionHeader from "../common/SectionHeader.vue";
 import JobApplication from "../common/JobApplication.vue";
 
-const jobSlider = ref(null)
-
 const sliderBreakpoints = {
   320: {
     slidesPerView: 1
@@ -58,7 +56,6 @@ const jobs = [
 <template>
   <section class="saved-jobs-slider">
      <Swiper
-         ref="jobSlider"
           :free-mode="true"
           :space-between="20"
           :breakpoints="sliderBreakpoints"
