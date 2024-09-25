@@ -69,7 +69,7 @@ watch(() => sidebarExpand.value, (val) => {
   emit('sidebar-toggled', val);
 })
 
-const route = useRoute();
+// const route = useRoute();
 
 // watch(() => route.path, (val) => {
 //   console.log('testing here ', manageJobsMenuDropdownExpand.value, val)
