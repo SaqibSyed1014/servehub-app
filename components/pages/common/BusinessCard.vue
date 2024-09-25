@@ -20,3 +20,4 @@ defineProps({
 })
 </script>
 
+<style scoped lang="postcss"></style>
