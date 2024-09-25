@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const route = useRoute();
+// const route = useRoute();
 
 let title = ref('');
 let subTitle = ref('');
