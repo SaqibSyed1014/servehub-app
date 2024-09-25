@@ -71,9 +71,9 @@ watch(() => sidebarExpand.value, (val) => {
 
 const route = useRoute();
 
-watchEffect(() => {
-  console.log('testing here ', manageJobsMenuDropdownExpand.value, route.path)
-  if (route.path !== '/saved-jobs') {}
+watch(() => route.path, (val) => {
+  console.log('testing here ', manageJobsMenuDropdownExpand.value, val)
+  if (val !== '/saved-jobs') {}
 })
 </script>
 
