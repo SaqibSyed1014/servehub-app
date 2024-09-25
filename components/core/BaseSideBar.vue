@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { isDevEnv } from "~/segments/utils";
-
 let sidebarLinks = ref([
   {
     label: 'Dashboard',
@@ -25,7 +23,7 @@ let sidebarLinks = ref([
       },
       {
         label: 'Browser Jobs',
-        path: `${isDevEnv() ? 'https://devweb.servehub.io' : 'https://www.servehub.io'}/jobs`
+        path: 'https://devweb.servehub.io'
       }
     ]
   },
@@ -76,10 +74,6 @@ const route = useRoute();
 watchEffect(() => {
   if (route.path !== '/saved-jobs') manageJobsMenuDropdownExpand.value = false;
 })
-
-if (isDevEnv()) {
-
-}
 </script>
 
 <template>
