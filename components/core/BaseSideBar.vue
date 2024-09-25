@@ -71,10 +71,10 @@ watch(() => sidebarExpand.value, (val) => {
 
 const route = useRoute();
 
-watch(() => route.path, (val) => {
-  console.log('testing here ', manageJobsMenuDropdownExpand.value, val)
-  if (val !== '/saved-jobs') {}
-})
+// watch(() => route.path, (val) => {
+//   console.log('testing here ', manageJobsMenuDropdownExpand.value, val)
+//   if (val !== '/saved-jobs') {}
+// })
 </script>
 
 <template>
