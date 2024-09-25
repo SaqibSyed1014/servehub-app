@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useRoute } from "vue-router";
+
 let sidebarLinks = ref([
   {
     label: 'Dashboard',
@@ -69,12 +71,12 @@ watch(() => sidebarExpand.value, (val) => {
   emit('sidebar-toggled', val);
 })
 
-// const route = useRoute();
+const route = useRoute();
 
-// watch(() => route.path, (val) => {
-//   console.log('testing here ', manageJobsMenuDropdownExpand.value, val)
-//   if (val !== '/saved-jobs') {}
-// })
+watch(() => route.path, (val) => {
+  console.log('testing here ', manageJobsMenuDropdownExpand.value, val)
+  if (val !== '/saved-jobs') {}
+})
 </script>
 
 <template>
