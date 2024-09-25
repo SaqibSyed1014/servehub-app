@@ -1,14 +1,16 @@
 <script setup lang="ts">
-// const route = useRoute();
+import { useRoute } from "vue-router";
 
-let title = ref('Dashboard');
-let subTitle = ref('welcome Olivia');
+const route = useRoute();
 
-// watchEffect(() => {
-//   const { pageTitle, pageSubtitle } = route.meta;
-//   title.value = pageTitle;
-//   subTitle.value = pageSubtitle;
-// })
+let title = ref('');
+let subTitle = ref('');
+
+watchEffect(() => {
+  const { pageTitle, pageSubtitle } = route.meta;
+  title.value = pageTitle;
+  subTitle.value = pageSubtitle;
+})
 </script>
 
 <template>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { isDevEnv } from "~/segments/utils";
+import { useRoute } from "vue-router";
 
 let sidebarLinks = ref([
   {
@@ -71,11 +72,11 @@ watch(() => sidebarExpand.value, (val) => {
   emit('sidebar-toggled', val);
 })
 
-// const route = useRoute();
-//
-// watchEffect(() => {
-//   if (route.path !== '/saved-jobs') manageJobsMenuDropdownExpand.value = false;
-// })
+const route = useRoute();
+
+watchEffect(() => {
+  if (route.path !== '/saved-jobs') manageJobsMenuDropdownExpand.value = false;
+})
 
 </script>
 
