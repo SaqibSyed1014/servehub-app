@@ -50,7 +50,9 @@
             </div>
 
             <div class="flex flex-col gap-6 items-center relative">
-              <SemiCircleProgressBar />
+              <client-only>
+                <SemiCircleProgressBar />
+              </client-only>
               <p class="text-brand-700 underline cursor-pointer">Complete Profile</p>
             </div>
           </div>

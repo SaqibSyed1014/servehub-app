@@ -83,7 +83,6 @@ if (isDevEnv()) {
 </script>
 
 <template>
-  {{jobsLink}}
   <aside class="dashboard-sidebar" :class="[sidebarExpand ? 'sidebar-expanded' : 'sidebar-collapsed']">
     <div class="dashboard-sidebar-inner">
       <div class="dashboard-sidebar-upper">
