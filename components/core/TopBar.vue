@@ -1,14 +1,14 @@
 <script setup lang="ts">
-const route = useRoute();
+// const route = useRoute();
 
-let title = ref('');
-let subTitle = ref('');
+let title = ref('Dashboard');
+let subTitle = ref('welcome Olivia');
 
-watchEffect(() => {
-  const { pageTitle, pageSubtitle } = route.meta;
-  title.value = pageTitle;
-  subTitle.value = pageSubtitle;
-})
+// watchEffect(() => {
+//   const { pageTitle, pageSubtitle } = route.meta;
+//   title.value = pageTitle;
+//   subTitle.value = pageSubtitle;
+// })
 </script>
 
 <template>

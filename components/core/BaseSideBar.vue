@@ -71,15 +71,12 @@ watch(() => sidebarExpand.value, (val) => {
   emit('sidebar-toggled', val);
 })
 
-const route = useRoute();
+// const route = useRoute();
+//
+// watchEffect(() => {
+//   if (route.path !== '/saved-jobs') manageJobsMenuDropdownExpand.value = false;
+// })
 
-watchEffect(() => {
-  if (route.path !== '/saved-jobs') manageJobsMenuDropdownExpand.value = false;
-})
-
-if (isDevEnv()) {
-
-}
 </script>
 
 <template>
