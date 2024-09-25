@@ -4,10 +4,10 @@ import RecentJobApplications from "../components/pages/dashboard/RecentJobApplic
 import RecentFollowedBusinesses from "../components/pages/dashboard/RecentFollowedBusinesses.vue";
 import RecentBlogs from "../components/pages/dashboard/RecentBlogs.vue";
 
-definePageMeta({
-  pageTitle: 'Dashboard',
-  pageSubtitle: 'Welcome Olivia'
-})
+// definePageMeta({
+//   pageTitle: 'Dashboard',
+//   pageSubtitle: 'Welcome Olivia'
+// })
 </script>
 
 <template>

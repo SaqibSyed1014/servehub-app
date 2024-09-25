@@ -4,11 +4,11 @@ const route = useRoute();
 let title = ref('');
 let subTitle = ref('');
 
-watchEffect(() => {
-  const { pageTitle, pageSubtitle } = route.meta;
-  title.value = pageTitle;
-  subTitle.value = pageSubtitle;
-})
+// watchEffect(() => {
+//   const { pageTitle, pageSubtitle } = route.meta;
+//   title.value = pageTitle;
+//   subTitle.value = pageSubtitle;
+// })
 </script>
 
 <template>
